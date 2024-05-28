@@ -29,7 +29,7 @@ var a=0,finish;
 finish = "people come & go ju, maybe you will ignore me because you got boring talking to me but i wish you'll be happy and take care of yourself ";
 
 function play() {
-  var audio = new Audio('The Lamp Is Low   Maynard Ferguson.mp3');
+  var audio = new Audio('7183385625586944811.mp3');
   audio.play();
 }
             
@@ -43,7 +43,7 @@ function play() {
             });
             async function mulai(){
                 var { value: nama } = await swals.fire({
-                    title: 'insert your name',
+                    title: "what i call your nickname? that's the pass",
                     input: 'text',
                     confirmButtonText: 'next',
                     showCancelButton: false,
@@ -54,7 +54,7 @@ function play() {
                     document.getElementById("kamu").innerHTML = "" + window.nama;
                     setTimeout(showDiv, 700);play();                      
                 } else {
-                    await swals.fire('Heh! Jangan dikosongin atuh namanya buru isi 😡');
+                    await swals.fire('damn ju, you should answer the question 💩');
                     mulai();
                 }
             }
